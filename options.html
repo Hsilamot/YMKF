@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube Media Key Fix Options</title>
+    <style>
+      body {
+        font-family: monospace;
+        overflow: hidden;
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px black solid; 
+        border-radius: 2px;
+      }
+
+      *:focus {
+        outline: none;
+      }
+
+      div {
+        display: flex; 
+        justify-content: space-between; 
+        justify-items: center; 
+        align-items: center; 
+        padding: 10px;
+      }
+
+      button {
+        font-family: inherit; 
+        background-color: transparent; 
+        border: 1px black solid; 
+        border-radius: 2px;
+      }
+
+      button:hover {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.5), inset 0px -15px 10px -15px rgba(0,0,0,0.5);
+      }
+
+      p {
+        font-family: inherit; 
+        color: black;
+        font-size: 0.65rem;
+      }
+
+      a {
+        font: inherit;
+        margin-top: 1.5px;
+        font-size: 0.75rem;
+        padding: 2px;
+      }
+
+      label {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      label input {
+        opacity: 0;
+        height: 0;
+        width: 0;
+      }
+
+      span {
+        padding: 6px;
+        background-color: transparent;
+        border: 1px black solid; 
+        border-radius: 2px;
+      }
+
+      label:hover input ~ span {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.5), inset 0px -15px 10px -15px rgba(0,0,0,0.5);
+      }
+
+      label input:checked ~ span {
+        background-color: rgba(0,0,0,0.5)
+      }
+
+      span:after {
+        content: "";
+        display: none;
+      }
+
+      label input:checked ~ span:after {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+
+      <label for="shuffle">
+        <a>Shuffle playlist - </a>
+        <input type="checkbox" id="shuffle">
+        <span></span>
+      </label>
+
+      <button id="save">Save</button>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

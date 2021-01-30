@@ -1,0 +1,32 @@
+{
+  "name": "Youtube Media Key Fix",
+  "description": "Fixes the media key issue on youtube.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "next": {
+      "description": "Plays the next video in the queue.",
+      "global": true
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "options.html"
+  }
+}
