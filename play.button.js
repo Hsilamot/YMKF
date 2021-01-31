@@ -1,0 +1,1 @@
+document.getElementsByClassName("ytp-play-button")[0].click();

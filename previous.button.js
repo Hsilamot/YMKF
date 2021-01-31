@@ -1,0 +1,1 @@
+document.getElementsByClassName("ytp-prev-button")[0].click();

@@ -7,8 +7,16 @@
     "service_worker": "background.js"
   },
   "commands": {
+    "play/pause": {
+      "description": "Plays or pauses the youtube player",
+      "global": true
+    },
     "next": {
       "description": "Plays the next video in the queue.",
+      "global": true
+    },
+    "previous": {
+      "description": "Plays the previous video in the queue. (it has to be a queue)",
       "global": true
     }
   },
